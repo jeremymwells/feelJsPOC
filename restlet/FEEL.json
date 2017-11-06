@@ -1,0 +1,468 @@
+{
+  "front-version": "2.10.1",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "id": "8db068b3-e486-43c2-b87d-74b960412f3e",
+      "lastModified": "2017-11-01T08:59:19.923-04:00",
+      "name": "FEEL"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded"
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 150,
+        "textBody": "{ \n  \"State\" : \"Karnataka\", \n  \"Units\" : 31 \n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "path",
+              "value": "./rules/ElectricityBill.xlsx"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:4000",
+        "path": "/table"
+      },
+      "id": "a754e458-2089-425d-a12c-1927dd7809b2",
+      "lastModified": "2017-10-31T14:49:10.390-04:00",
+      "name": "FEEL: ElectricityBill",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "8db068b3-e486-43c2-b87d-74b960412f3e"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded"
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 150,
+        "textBody": "{ \n  \"State\" : \"Karnataka\", \n  \"Units\" : 31 \n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "path",
+              "value": "./rules/ElectricityBill.xlsx"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:4000",
+        "path": "/table/csv"
+      },
+      "id": "abc15bd0-78e1-4d5d-9d03-df4d940ce1ae",
+      "lastModified": "2017-10-31T14:49:30.470-04:00",
+      "name": "FEEL: Excel -> CSV",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "8db068b3-e486-43c2-b87d-74b960412f3e"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded"
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 150,
+        "textBody": "{ \n  \"State\" : \"Karnataka\", \n  \"Units\" : 31 \n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "path",
+              "value": "./rules/ElectricityBill.xlsx"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:4000",
+        "path": "/table"
+      },
+      "id": "88ecf5ea-2a28-4a0a-bb1e-41999b280e2c",
+      "lastModified": "2017-10-31T14:49:38.804-04:00",
+      "name": "FEEL: Excel -> DECISIONTABLE",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "8db068b3-e486-43c2-b87d-74b960412f3e"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded"
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 150,
+        "textBody": "{\n  \"Applicant\": {\n    \"ExistingCustomer\" : true\n  }, \n  \"Report\": {\n    \"CreditScore\" : 600\n  }, \n  \"b\" : 60\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "path",
+              "value": "./rules/PostBureauRiskCategory.xlsx"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:4000",
+        "path": "/table"
+      },
+      "id": "73063af9-3c73-4a95-84a0-b3fcd12539bd",
+      "lastModified": "2017-10-31T14:49:43.331-04:00",
+      "name": "FEEL: PostBureauRiskCategory",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "8db068b3-e486-43c2-b87d-74b960412f3e"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded"
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 284,
+        "textBody": "{ \n  \"rule\" : \"a in [b..c]\", \n  \"context\" : {\n    \"a\":999,\n    \"b\":0,\n    \"c\":1000\n  }\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:4000",
+        "path": "/rule/evaluate"
+      },
+      "id": "e1336460-ee38-477d-9f2e-159c9e58b218",
+      "lastModified": "2017-10-31T14:49:48.000-04:00",
+      "name": "FEEL: Rules",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "8db068b3-e486-43c2-b87d-74b960412f3e"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded"
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 150,
+        "textBody": "{ \n  \"Student GPA\" : 3.6, \n  \"Student Extra-Curricular Activities Count\" : 4, \n  \"Student National Honor Society Membership\" : \"Yes\" \n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "path",
+              "value": "./rules/StudentFinancialPackageEligibility.xlsx"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:4000",
+        "path": "/table"
+      },
+      "id": "75641664-1977-4741-85a2-fc0860648d40",
+      "lastModified": "2017-10-31T14:49:52.368-04:00",
+      "name": "FEEL: StudentFinancialPackageEligibility",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "8db068b3-e486-43c2-b87d-74b960412f3e"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded"
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 150,
+        "textBody": "{ \n  \"State\" : \"Karnataka\", \n  \"Units\" : 31 \n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "path",
+              "value": "./rules/PostBureauRiskCategory.xlsx"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:4000",
+        "path": "/survey/generate"
+      },
+      "id": "8eab2bdd-af77-4653-b5ea-d4e39e20343c",
+      "lastModified": "2017-11-01T08:59:19.923-04:00",
+      "name": "FEEL: Survey",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "8db068b3-e486-43c2-b87d-74b960412f3e"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded"
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 150,
+        "textBody": "{ \n  \"State\" : \"Karnataka\", \n  \"Units\" : 31 \n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "path",
+              "value": "./rules/PostBureauRiskCategory.xlsx"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:4000",
+        "path": "/survey/generate/questions"
+      },
+      "id": "723b1d39-deec-4ed7-a621-6a2401977f42",
+      "lastModified": "2017-11-01T08:58:43.648-04:00",
+      "name": "FEEL: Survey > Questions",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "8db068b3-e486-43c2-b87d-74b960412f3e"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded"
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 150,
+        "textBody": "{ \n  \"status\" : \"entered\", \n  \"age\" : 150, \n  \"married\" : true, \n  \"gender\" : \"F\", \n  \"phone\" : \"9090909090\" \n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "path",
+              "value": "./rules/Validation.xlsx"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:4000",
+        "path": "/table"
+      },
+      "id": "30405841-9758-45bc-bc06-4743e4a5f0dc",
+      "lastModified": "2017-10-31T14:49:57.530-04:00",
+      "name": "FEEL: Validation (fail)",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "8db068b3-e486-43c2-b87d-74b960412f3e"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded"
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 150,
+        "textBody": "{ \n  \"status\" : \"entered\", \n  \"age\" : 59, \n  \"married\" : true, \n  \"gender\" : \"F\", \n  \"phone\" : \"9090909090\",\n  \"husband_name\":\"John\",\n  \"email\":\"foo@bar.com\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "path",
+              "value": "./rules/Validation.xlsx"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:4000",
+        "path": "/table"
+      },
+      "id": "aea2d256-55a1-4be0-ac58-75d5346c153b",
+      "lastModified": "2017-10-31T14:50:02.045-04:00",
+      "name": "FEEL: Validation (success)",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "8db068b3-e486-43c2-b87d-74b960412f3e"
+    }
+  ]
+}

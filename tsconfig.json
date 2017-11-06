@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "typeRoots" : ["./node_modules/@types"],
+        "moduleResolution": "node",
+        "target":"es2016"
+    },
+    "watch": true,
+    "include": [
+        "./*.ts",
+        "**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
